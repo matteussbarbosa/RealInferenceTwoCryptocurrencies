@@ -2,21 +2,9 @@
 Determines whether the null hypothesis should be rejected using a t-test.
 """
 
-import numpy as np
 from scipy.stats import t
 
 
-def reject_null_hipotesys_t_test(
-        parameter,
-        alpha,
-        degrees_of_freedom,
-        standard_error
-):
-    
-    # Calculates the p-value.
-    t_stats = (parameter - 0) / (standard_error)
-    p_value = 2 * (1 - t.cdf(abs(t_stats), degrees_of_freedom))
-    
 def reject_null_hypothesis_t_test(
         parameter: float,
         null_hypothesis_value: float,
@@ -58,4 +46,3 @@ def reject_null_hypothesis_t_test(
     p_value = 2 * (1 - t.cdf(abs(t_statistic), degrees_of_freedom))
         
     return p_value <= alpha
-
