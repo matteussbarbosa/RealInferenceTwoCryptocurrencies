@@ -42,7 +42,7 @@ def reject_null_hypothesis_t_test(
         raise ValueError('alpha must be between 0 and 1.')
 
     # Calculates the p-value for two-tail t-test.
-    t_statistic = (parameter - null_hyt_statspothesis_value) / (standard_error)
+    t_statistic = (parameter - null_hypothesis_value) / (standard_error)
     p_value = 2 * (1 - t.cdf(abs(t_statistic), degrees_of_freedom))
         
     return p_value <= alpha
