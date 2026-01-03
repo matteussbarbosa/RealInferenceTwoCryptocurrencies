@@ -1,0 +1,54 @@
+# Requirements
+
+## Overview
+
+This file lists the **external Python dependencies** required to run the hypothesis testing module based on the Student’s *t-test*.
+
+All listed packages are standard, well-maintained scientific libraries commonly used in statistical and quantitative analysis.
+
+---
+
+## Dependencies
+
+### SciPy
+
+* **Purpose:** Scientific computing and statistical functions.
+* **Usage in the project:**
+
+  * Access to the Student’s *t* distribution;
+  * Computation of *p-values* required for hypothesis testing.
+
+---
+
+## Installation
+
+Install the dependencies using:
+
+```bash
+pip install -r requirements.txt
+```
+
+It is recommended to install the dependencies inside a **virtual environment** to avoid conflicts with system-wide packages.
+
+---
+
+## Versioning Notes
+
+* Specific version pinning may be added if strict reproducibility is required.
+* In exploratory or educational contexts, allowing flexible versions is acceptable.
+
+---
+
+## Scope
+
+The requirements file is intentionally minimal, containing only what is strictly necessary to:
+
+* perform statistical inference;
+* ensure numerical reliability;
+* keep the module lightweight and portable.
+
+---
+
+## Conclusion
+
+This requirements file ensures that the environment is properly configured to execute the *t-test* hypothesis testing module in a reliable and reproducible m
